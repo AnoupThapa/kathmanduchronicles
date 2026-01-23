@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- Critical SEO & Social Meta -->
+    <title>The Kathmandu Chronicles | Stories from Nepal's Sacred Valley</title>
+    <meta name="title" content="The Kathmandu Chronicles | Stories from Nepal's Sacred Valley">
+    <meta name="description" content="Discover authentic stories from Kathmandu Valley. Tribal traditions, urban struggles, community resilience, and cultural heritage told through voices of locals.">
+    <meta name="keywords" content="Kathmandu stories, Nepal culture, Newar traditions, Valley communities, Himalayan heritage, Nepali storytelling">
+    <meta name="author" content="The Kathmandu Chronicles Team">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://thekathmanduchronicles.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thekathmanduchronicles.com/">
+    <meta property="og:title" content="The Kathmandu Chronicles | Stories from Nepal's Sacred Valley">
+    <meta property="og:description" content="Authentic stories from Kathmandu Valley. Tribal traditions, urban struggles, community resilience.">
+    <meta property="og:image" content="https://thekathmanduchronicles.com/images/og-homepage.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="The Kathmandu Chronicles">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@ktmchronicles">
+    <meta property="twitter:creator" content="@ktmchronicles">
+    <meta property="twitter:title" content="The Kathmandu Chronicles | Stories from Nepal's Sacred Valley">
+    <meta property="twitter:description" content="Authentic stories from Kathmandu Valley.">
+    <meta property="twitter:image" content="https://thekathmanduchronicles.com/images/og-homepage.jpg">
+    
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏔️%3C/text%3E%3C/svg%3E">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "The Kathmandu Chronicles",
+        "description": "Stories from Nepal's Sacred Valley",
+        "url": "https://thekathmanduchronicles.com/",
+        "publisher": {
+            "@type": "Organization",
+            "name": "The Kathmandu Chronicles",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://thekathmanduchronicles.com/images/logo.png",
+                "width": 600,
+                "height": 60
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "The Chronicles Team",
+            "url": "https://thekathmanduchronicles.com/about.html"
+        }
+    }
+    </script>
+
+    <style>
+        /* Modern CSS Reset & Custom Properties */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Enhanced Color Palette */
+            --primary-color: #e67e22;
+            --primary-dark: #d35400;
+            --secondary-color: #16a085;
+            --accent-color: #f1c40f;
+            --success-color: #27ae60;
+            --error-color: #c0392b;
+            --dark-bg: #2c3e50;
+            --dark-bg-secondary: #34495e;
+            --light-bg: #ecf0f1;
+            --light-bg-secondary: #bdc3c7;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --text-muted: #95a5a6;
+            --white: #ffffff;
+            --black: #000000;
+            
+            /* Glassmorphism */
+            --glass-bg: rgba(236, 240, 241, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.3);
+            --glass-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.2);
+            
+            /* Spacing Scale */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            
+            /* Typography Scale */
+            --font-size-xs: clamp(0.75rem, 2vw, 0.875rem);
+            --font-size-sm: clamp(0.875rem, 2vw, 1rem);
+            --font-size-base: clamp(1rem, 2vw, 1.125rem);
+            --font-size-lg: clamp(1.125rem, 2vw, 1.25rem);
+            --font-size-xl: clamp(1.25rem, 3vw, 1.5rem);
+            --font-size-2xl: clamp(1.5rem, 4vw, 2rem);
+            --font-size-3xl: clamp(2rem, 5vw, 3rem);
+            --font-size-4xl: clamp(3rem, 6vw, 4rem);
+            
+            /* Shadows */
+            --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            
+            /* Gradients */
+            --gradient-1: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+            --gradient-2: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);
+            --gradient-3: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%);
+            --gradient-dark: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            --gradient-light: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+            --gradient-hero: radial-gradient(ellipse at top right, rgba(230, 126, 34, 0.15), transparent 70%);
+            
+            /* Transitions */
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --light-bg: #2c3e50;
+                --light-bg-secondary: #34495e;
+                --text-dark: #ecf0f1;
+                --text-light: #bdc3c7;
+                --text-muted: #95a5a6;
+                --glass-bg: rgba(44, 62, 80, 0.85);
+                --glass-border: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        /* High Contrast Mode */
+        @media (prefers-contrast: high) {
+            :root {
+                --primary-color: #ff6b00;
+                --secondary-color: #00a856;
+                --accent-color: #ffd600;
+                --text-dark: #000000;
+                --text-light: #000000;
+                --dark-bg: #ffffff;
+                --light-bg: #ffffff;
+            }
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Base Styles */
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--light-bg);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--space-md);
+            letter-spacing: -0.02em;
+        }
+
+        h1 { font-size: var(--font-size-4xl); }
+        h2 { font-size: var(--font-size-3xl); }
+        h3 { font-size: var(--font-size-2xl); }
+        h4 { font-size: var(--font-size-xl); }
+        h5 { font-size: var(--font-size-lg); }
+        h6 { font-size: var(--font-size-base); }
+
+        p {
+            margin-bottom: var(--space-lg);
+            color: var(--text-light);
+            font-size: var(--font-size-base);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-fast);
+            position: relative;
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        .container--narrow {
+            max-width: 800px;
+        }
+
+        .container--wide {
+            max-width: 1400px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-sm);
+            padding: var(--space-md) var(--space-xl);
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-base);
+            border: none;
+            outline: none;
+            font-size: var(--font-size-base);
+            font-family: inherit;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.1);
+            opacity: 0;
+            transition: var(--transition-fast);
+        }
+
+        .btn:hover::before {
+            opacity: 1;
+        }
+
+        .btn:focus-visible {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        .btn--primary {
+            background: var(--gradient-1);
+            color: var(--white);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn--primary:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn--primary:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        .btn--secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn--secondary:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .btn--small {
+            padding: var(--space-sm) var(--space-md);
+            font-size: var(--font-size-sm);
+        }
+
+        .btn--large {
+            padding: var(--space-lg) var(--space-2xl);
+            font-size: var(--font-size-lg);
+        }
+
+        .btn--full-width {
+            width: 100%;
+        }
+
+        .text-gradient {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-padding {
+            padding: var(--space-3xl) 0;
+        }
+
+        .section-padding--small {
+            padding: var(--space-2xl) 0;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Reveal Animation */
+        [data-reveal] {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-reveal="true"] {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Loading Skeleton */
+        .skeleton {
+            background: linear-gradient(90deg, var(--light-bg-secondary) 25%, var(--glass-border) 50%, var(--light-bg-secondary) 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+            border-radius: 8px;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* Skip to main content */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: var(--space-sm) var(--space-md);
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+            z-index: 1000;
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Reading Progress */
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: var(--gradient-1);
+            z-index: 1001;
+            transition: width 0.1s ease;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 1000;
+            transition: var(--transition-base);
+            box-shadow: var(--shadow-sm);
+        }
+
+        header.scrolled {
+            background: rgba(248, 250, 252, 0.95);
+            box-shadow: var(--shadow-lg);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            header.scrolled {
+                background: rgba(44, 62, 80, 0.95);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-md) 0;
+            gap: var(--space-lg);
+        }
+
+        .logo {
+            font-size: var(--font-size-xl);
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--space-lg);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            color: var(--text-muted);
+            position: relative;
+            padding: var(--space-sm) 0;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-dark);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-1);
+            transition: width var(--transition-base);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a[aria-current="page"]::after {
+            width: 100%;
+        }
+
+        .nav-links a[aria-current="page"] {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: var(--space-sm);
+            position: relative;
+            z-index: 1001;
+        }
+
+        .mobile-menu-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--text-dark);
+            margin: 5px 0;
+            transition: var(--transition-base);
+            border-radius: 2px;
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"] span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"] span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"] span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: var(--space-md) 0;
+            font-size: var(--font-size-sm);
+            color: var(--text-muted);
+        }
+
+        .breadcrumb a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-color);
+        }
+
+        .breadcrumb span {
+            margin: 0 var(--space-xs);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: var(--space-3xl) 0;
+            position: relative;
+            overflow: hidden;
+            background: var(--gradient-hero);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(230, 126, 34, 0.1) 0%, transparent 70%);
+            animation: float 20s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            margin-bottom: var(--space-lg);
+        }
+
+        .hero-text p {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-xl);
+            color: var(--text-light);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            position: relative;
+            animation: bounce 3s infinite ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero-image img {
+            border-radius: 1rem;
+            box-shadow: var(--shadow-xl);
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+        }
+
+        /* Featured Posts */
+        .featured-posts {
+            background: var(--gradient-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .section-header h2 {
+            margin-bottom: var(--space-md);
+        }
+
+        .section-header p {
+            font-size: var(--font-size-lg);
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-xl);
+        }
+
+        .post-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-base);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            contain: layout style paint;
+        }
+
+        .post-card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .post-card.featured {
+            border: 2px solid var(--primary-color);
+        }
+
+        .post-card.featured::before {
+            content: 'Featured Story';
+            position: absolute;
+            top: var(--space-md);
+            right: var(--space-md);
+            background: var(--gradient-1);
+            color: var(--white);
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: 20px;
+            font-size: var(--font-size-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            z-index: 2;
+        }
+
+        .post-image {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .post-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .post-card:hover .post-image img {
+            transform: scale(1.08);
+        }
+
+        .post-content {
+            padding: var(--space-xl);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-md);
+            font-size: var(--font-size-sm);
+            color: var(--text-muted);
+        }
+
+        .post-category {
+            background: var(--gradient-1);
+            color: var(--white);
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: var(--font-size-xs);
+            letter-spacing: 0.05em;
+        }
+
+        .post-title {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--space-md);
+            color: var(--text-dark);
+            line-height: 1.3;
+        }
+
+        .post-title a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .post-title a:hover {
+            color: var(--primary-color);
+        }
+
+        .post-excerpt {
+            color: var(--text-light);
+            margin-bottom: var(--space-lg);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex-grow: 1;
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: auto;
+        }
+
+        .read-more:hover {
+            gap: var(--space-md);
+        }
+
+        .read-more::after {
+            content: '→';
+            transition: transform var(--transition-fast);
+        }
+
+        .read-more:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+
+        .about-text h2 {
+            margin-bottom: var(--space-lg);
+        }
+
+        .about-text p {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-lg);
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+
+        .stat {
+            text-align: center;
+            padding: var(--space-lg);
+            background: var(--glass-bg);
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-base);
+        }
+
+        .stat:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-number {
+            font-size: var(--font-size-3xl);
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            line-height: 1;
+            margin-bottom: var(--space-xs);
+        }
+
+        .stat > div:last-child {
+            color: var(--text-muted);
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            border-radius: 12px;
+            box-shadow: var(--shadow-xl);
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            background: var(--gradient-1);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: float 25s infinite linear reverse;
+            z-index: 0;
+        }
+
+        .newsletter .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .newsletter h2 {
+            color: var(--white);
+            margin-bottom: var(--space-md);
+        }
+
+        .newsletter p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto var(--space-xl);
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .newsletter-form input[type="email"] {
+            flex: 1;
+            padding: var(--space-md) var(--space-lg);
+            border: none;
+            border-radius: 8px;
+            font-size: var(--font-size-base);
+            min-width: 250px;
+            background: rgba(255, 255, 255, 0.95);
+            transition: var(--transition-fast);
+        }
+
+        .newsletter-form input[type="email"]:focus {
+            outline: 3px solid rgba(255, 255, 255, 0.5);
+            background: var(--white);
+        }
+
+        .newsletter-form button {
+            background: var(--white);
+            color: var(--primary-color);
+            padding: var(--space-md) var(--space-xl);
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter-form button:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-md);
+        }
+
+        .newsletter-form button:active {
+            transform: scale(0.98);
+        }
+
+        .newsletter-form button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .newsletter-form--loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--white);
+            border-top: 2px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            transform: translate(-50%, -50%);
+        }
+
+        .newsletter__success {
+            display: none;
+            color: var(--success-color);
+            font-weight: 600;
+            margin-top: var(--space-md);
+        }
+
+        .newsletter__error {
+            display: none;
+            color: var(--error-color);
+            font-weight: 600;
+            margin-top: var(--space-md);
+        }
+
+        .newsletter .trust-badge {
+            font-size: var(--font-size-sm);
+            opacity: 0.8;
+            margin-top: var(--space-md);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: var(--text-dark);
+            padding: var(--space-3xl) 0 var(--space-lg);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .footer-section h3 {
+            color: var(--text-dark);
+            margin-bottom: var(--space-lg);
+            font-size: var(--font-size-lg);
+        }
+
+        .footer-section a {
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: var(--space-sm);
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+            transform: translateX(4px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--space-sm);
+            margin-top: var(--space-md);
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            transition: var(--transition-base);
+        }
+
+        .social-links a:hover {
+            background: var(--gradient-1);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--space-2xl);
+            border-top: 1px solid var(--glass-border);
+            color: var(--text-muted);
+            font-size: var(--font-size-sm);
+        }
+
+        .footer-bottom a {
+            color: var(--text-muted);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: var(--space-xl);
+            right: var(--space-xl);
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-1);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition-base);
+            z-index: 999;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px) scale(1.1);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .back-to-top:active {
+            transform: translateY(0) scale(0.95);
+        }
+
+        .back-to-top:focus-visible {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        /* Loading Overlay */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity var(--transition-base);
+        }
+
+        .loading-overlay.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--light-bg-secondary);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --space-lg: 1rem;
+                --space-xl: 1.5rem;
+                --space-2xl: 2rem;
+                --space-3xl: 2.5rem;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--light-bg);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: var(--space-xl);
+                transition: left var(--transition-base);
+                box-shadow: var(--shadow-lg);
+                border-top: 1px solid var(--glass-border);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .hero-content,
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: var(--space-2xl);
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .posts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-form input,
+            .newsletter-form button {
+                width: 100%;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            header, footer, .back-to-top, .newsletter, .reading-progress {
+                display: none;
+            }
+            
+            .hero {
+                margin-top: 0;
+            }
+            
+            a::after {
+                content: " (" attr(href) ")";
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="readingProgress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader" role="status" aria-label="Loading page..."></div>
+    </div>
+    
+    <!-- Header -->
+    <header id="header" role="banner">
+        <nav class="container" role="navigation" aria-label="Main navigation">
+            <div class="logo" aria-label="The Kathmandu Chronicles Home">
+                The <span class="text-gradient">Kathmandu</span> Chronicles
+            </div>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem" aria-current="page">Home</a></li>
+                <li role="none"><a href="blog.html" role="menuitem">Stories</a></li>
+                <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                <li role="none"><a href="#newsletter" role="menuitem">Newsletter</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" 
+                    aria-label="Toggle mobile menu" 
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content" data-reveal>
+                    <div class="hero-text">
+                        <h1 id="hero-heading">
+                            Stories from <span class="text-gradient">Nepal's Sacred Valley</span>
+                        </h1>
+                        <p>
+                            Listen to the voices of <strong>Kathmandu Valley</strong> – from Newar artisans in Bhaktapur to Tamang farmers in the hills. We share authentic stories of struggle, resilience, tradition, and change from the communities that make this valley sacred.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="blog.html" class="btn btn--primary" aria-label="Read latest stories">
+                                <span>📖</span> Read Stories
+                            </a>
+                            <a href="#newsletter" class="btn btn--secondary" aria-label="Subscribe to stories">
+                                <span>📰</span> Subscribe Free
+                            </a>
+                        </div>
+                        <!-- Social Proof -->
+                        <div style="margin-top: var(--space-xl); font-size: var(--font-size-sm); color: var(--text-muted);">
+                            ✅ Featured stories from <strong>Dolakha, Sindhupalchowk, Kavre & Valley Towns</strong>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1595998442344-11f4e0a9f0a7?w=800&h=533&fit=crop" 
+                             alt="Local woman in traditional attire at Kathmandu Durbar Square" 
+                             loading="eager"
+                             fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Stories Section -->
+        <section class="featured-posts section-padding" id="blog" aria-labelledby="blog-heading">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <h2 id="blog-heading">
+                        Featured <span class="text-gradient">Stories</span>
+                    </h2>
+                    <p>Recent stories from across the valley. Updated weekly.</p>
+                </div>
+                <div class="posts-grid">
+                    <!-- Featured Story 1 -->
+                    <article class="post-card featured" data-reveal>
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1569163139394-de4798aa4e9a?w=600&h=250&fit=crop" 
+                                 alt="Newar potter in Bhaktapur working on traditional pottery wheel" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="250">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Heritage</span>
+                                <span class="post-date" datetime="2024-12-18">Dec 18, 2024</span>
+                                <span>6 min read</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="post-1.html" aria-describedby="read-more-1">
+                                    The Last Potter of Thimi: Keeping Newar Traditions Alive
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                At 68, Prem Bahadur Prajapati is one of the last master potters in Thimi. His hands, coated in red clay for 50 years, shape vessels using techniques unchanged for 12 generations. But his sons have different plans.
+                            </p>
+                            <a href="post-1.html" class="read-more" id="read-more-1" aria-label="Read full story about Thimi potter">
+                                Read Full Story <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Story 2 -->
+                    <article class="post-card" data-reveal>
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&h=250&fit=crop" 
+                                 alt="Tamang woman in traditional clothing walking through mountain village" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="250">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category" style="background: var(--gradient-2);">Community</span>
+                                <span class="post-date" datetime="2024-12-15">Dec 15, 2024</span>
+                                <span>8 min read</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="post-2.html">
+                                    Rebuilding Dolakha: Women Leading Earthquake Recovery
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                    After the 2015 earthquake destroyed their homes, women in Dolakha didn't wait for help. They formed collectives, learned masonry, and rebuilt their village stone by stone. The story of resilience and leadership.
+                            </p>
+                            <a href="post-2.html" class="read-more">
+                                Read Article <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <!-- Story 3 -->
+                    <article class="post-card" data-reveal>
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1575576653408-2e17f05c1026?w=600&h=250&fit=crop" 
+                                 alt="Street food vendor in Kathmandu preparing traditional snacks" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="250">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category" style="background: var(--gradient-3);">Urban Life</span>
+                                <span class="post-date" datetime="2024-12-12">Dec 12, 2024</span>
+                                <span>5 min read</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="post-3.html">
+                                    Kathmanda's Invisible Workforce: Street Vendors' Daily Battle
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                    Every morning at 5 AM, 64-year-old Saraswati rises to sell chatamari near Ratna Park. Her story mirrors thousands of informal workers who keep Kathmandu running while fighting for their right to exist.
+                            </p>
+                            <a href="post-3.html" class="read-more">
+                                Read Guide <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div style="text-align: center; margin-top: var(--space-3xl);" data-reveal>
+                    <a href="blog.html" class="btn btn--primary btn--large" aria-label="View all stories from Kathmandu Valley">
+                        View All Stories <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section class="about section-padding" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-content" data-reveal>
+                    <div class="about-text">
+                        <h2 id="about-heading">
+                            About <span class="text-gradient">The Chronicles</span>
+                        </h2>
+                        <p>
+                            We are a collective of storytellers, journalists, and community researchers dedicated to amplifying voices from <strong>Kathmandu Valley</strong>. Our mission is to preserve oral histories and document the living culture of this sacred valley.
+                        </p>
+                        <p>
+                            From the ancient cities of Kathmandu, Bhaktapur, and Patan to the mountain villages of Kavre and Sindhupalchowk, we bring you stories that matter—untold narratives of resilience, tradition, and change.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">150+</span>
+                                <div>Stories Published</div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">20+</span>
+                                <div>Valley Communities</div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5+</span>
+                                <div>Years of Storytelling</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop" 
+                             alt="Local community members sharing stories in traditional courtyard" 
+                             loading="lazy"
+                             width="500"
+                             height="500">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="newsletter section-padding" id="newsletter" aria-labelledby="newsletter-heading">
+            <div class="container container--narrow">
+                <div data-reveal>
+                    <h2 id="newsletter-heading">
+                        Receive Stories from the Valley
+                    </h2>
+                    <p>
+                        Get a new story from Kathmandu Valley delivered to your inbox every week. No spam, just authentic voices from our communities.
+                    </p>
+                    
+                    <form class="newsletter-form" id="newsletterForm" novalidate>
+                        <input type="email" 
+                               name="email" 
+                               placeholder="your.email@example.com" 
+                               required 
+                               aria-label="Email address for story newsletter"
+                               aria-describedby="email-error">
+                        <button type="submit" id="newsletterSubmit">
+                            <span class="button-text">Subscribe Free</span>
+                        </button>
+                    </form>
+                    
+                    <p id="email-error" class="newsletter__error" role="alert"></p>
+                    <p class="newsletter__success" role="status" aria-live="polite"></p>
+                    
+                    <p class="trust-badge">
+                        🔒 We respect privacy. <a href="#" style="color: white; text-decoration: underline;">Privacy Policy</a> • 5,000+ subscribers
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="contact" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        The <span style="background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Kathmandu</span> Chronicles
+                    </h3>
+                    <p style="color: var(--text-muted);">
+                        Amplifying voices from Nepal's sacred valley since 2019.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/ktmchronicles" aria-label="Follow us on Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/ktmchronicles" aria-label="Follow us on Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/ktmchronicles" aria-label="Subscribe on YouTube" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Stories by Region</h3>
+                    <a href="blog.html#kathmandu">🏛️ Kathmandu City</a>
+                    <a href="blog.html#bhaktapur">🎨 Bhaktapur Heritage</a>
+                    <a href="blog.html#patan">🏺 Patan Arts</a>
+                    <a href="blog.html#village">🏘️ Mountain Villages</a>
+                    <a href="blog.html#river">🌊 River Communities</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Story Themes</h3>
+                    <a href="blog.html#heritage">🎭 Cultural Heritage</a>
+                    <a href="blog.html#resilience">💪 Community Resilience</a>
+                    <a href="blog.html#migration">🚶 Migration Stories</a>
+                    <a href="blog.html#struggle">⚖️ Daily Struggles</a>
+                    <a href="blog.html#celebration">🎉 Festivals & Joy</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#">📔 Story Submission Guide</a>
+                    <a href="#">🎙️ Podcast Episodes</a>
+                    <a href="#">📸 Photo Archives</a>
+                    <a href="#">🗺️ Interactive Map</a>
+                    <a href="#">📖 Nepali Language Stories</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 The Kathmandu Chronicles. All rights reserved. | 
+                    <a href="privacy.html">Privacy</a> | 
+                    <a href="terms.html">Terms</a> | 
+                    <a href="sitemap.xml">Sitemap</a> | 
+                    <a href="accessibility.html">Accessibility</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top of page">
+        <span aria-hidden="true">↑</span>
+    </button>
+    
+    <!-- Enhanced JavaScript -->
+    <script>
+        // Remove loading overlay when page loads
+        window.addEventListener('load', () => {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.classList.add('hide');
+        });
+        
+        // Enhanced header scroll effect
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+        let ticking = false;
+        
+        function updateHeader() {
+            const currentScroll = window.pageYOffset;
+            const scrollThreshold = 100;
+            
+            if (currentScroll > scrollThreshold) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // Hide/show header on scroll direction
+            if (currentScroll > lastScroll && currentScroll > scrollThreshold) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScroll = currentScroll;
+            ticking = false;
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(updateHeader);
+                ticking = true;
+            }
+        });
+        
+        // Reading progress bar with smooth update
+        const readingProgress = document.getElementById('readingProgress');
+        let progressTicking = false;
+        
+        function updateReadingProgress() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = Math.min((winScroll / height) * 100, 100);
+            readingProgress.style.width = scrolled + '%';
+            readingProgress.setAttribute('aria-valuenow', Math.round(scrolled));
+            progressTicking = false;
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (!progressTicking) {
+                window.requestAnimationFrame(updateReadingProgress);
+                progressTicking = true;
+            }
+        });
+        
+        // Mobile menu with focus trap
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const focusableElements = navLinks.querySelectorAll('a[href], button, textarea, input[type="email"]');
+        const firstFocusable = focusableElements[0];
+        const lastFocusable = focusableElements[focusableElements.length - 1];
+        
+        function toggleMobileMenu() {
+            const isOpen = navLinks.classList.toggle('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+            
+            if (isOpen && firstFocusable) {
+                firstFocusable.focus();
+            }
+        }
+        
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+        
+        // Focus trap for mobile menu
+        navLinks.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab' && navLinks.classList.contains('active')) {
+                if (e.shiftKey && document.activeElement === firstFocusable) {
+                    e.preventDefault();
+                    lastFocusable.focus();
+                } else if (!e.shiftKey && document.activeElement === lastFocusable) {
+                    e.preventDefault();
+                    firstFocusable.focus();
+                }
+            }
+            
+            if (e.key === 'Escape') {
+                toggleMobileMenu();
+                mobileMenuToggle.focus();
+            }
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!header.contains(e.target) && navLinks.classList.contains('active')) {
+                toggleMobileMenu();
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                const target = document.querySelector(href);
+                
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL without jump
+                    history.pushState(null, null, href);
+                }
+            });
+        });
+        
+        // Reveal animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.setAttribute('data-reveal', 'true');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('[data-reveal]').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Newsletter form with validation and loading states
+        const newsletterForm = document.getElementById('newsletterForm');
+        const newsletterSubmit = document.getElementById('newsletterSubmit');
+        const newsletterSuccess = document.querySelector('.newsletter__success');
+        const newsletterError = document.querySelector('.newsletter__error');
+        
+        newsletterForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = newsletterForm.querySelector('input[type="email"]').value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            // Reset state
+            newsletterError.textContent = '';
+            newsletterSuccess.textContent = '';
+            newsletterForm.classList.remove('newsletter-form--loading');
+            newsletterSubmit.disabled = false;
+            
+            // Validate email
+            if (!email) {
+                newsletterError.textContent = 'Please enter your email address.';
+                return;
+            }
+            
+            if (!emailRegex.test(email)) {
+                newsletterError.textContent = 'Please enter a valid email address.';
+                return;
+            }
+            
+            // Show loading state
+            newsletterForm.classList.add('newsletter-form--loading');
+            newsletterSubmit.disabled = true;
+            
+            try {
+                // Simulate API call
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                
+                // Success
+                newsletterSuccess.textContent = 
+                    `🎉 Welcome! You'll receive valley stories at ${email}.`;
+                newsletterForm.reset();
+                
+                // Track event
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'newsletter_subscribe', {
+                        event_category: 'engagement',
+                        event_label: 'homepage_newsletter'
+                    });
+                }
+            } catch (error) {
+                newsletterError.textContent = 
+                    '❌ Something went wrong. Please try again.';
+            } finally {
+                newsletterForm.classList.remove('newsletter-form--loading');
+                newsletterSubmit.disabled = false;
+            }
+        });
+        
+        // Real-time email validation
+        const emailInput = newsletterForm.querySelector('input[type="email"]');
+        emailInput.addEventListener('input', (e) => {
+            const email = e.target.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (email && !emailRegex.test(email)) {
+                emailInput.setAttribute('aria-invalid', 'true');
+            } else {
+                emailInput.removeAttribute('aria-invalid');
+            }
+        });
+        
+        // Back to top button with smooth appearance
+        const backToTop = document.getElementById('backToTop');
+        let backToTopTicking = false;
+        
+        function updateBackToTop() {
+            const shouldShow = window.pageYOffset > 300;
+            if (shouldShow && !backToTop.classList.contains('show')) {
+                backToTop.classList.add('show');
+            } else if (!shouldShow && backToTop.classList.contains('show')) {
+                backToTop.classList.remove('show');
+            }
+            backToTopTicking = false;
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (!backToTopTicking) {
+                window.requestAnimationFrame(updateBackToTop);
+                backToTopTicking = true;
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Add keyboard shortcut for back to top
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Home' && e.ctrlKey) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+        
+        // Lazy loading for images with Intersection Observer
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.remove('skeleton');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+                img.classList.add('skeleton');
+                imageObserver.observe(img);
+            });
+        }
+        
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('section[id]');
+        
+        window.addEventListener('scroll', () => {
+            const current = Array.from(sections)
+                .find(section => window.pageYOffset >= section.offsetTop - 100);
+            
+            if (current) {
+                const currentId = current.getAttribute('id');
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.removeAttribute('aria-current');
+                    if (link.getAttribute('href') === `#${currentId}`) {
+                        link.setAttribute('aria-current', 'page');
+                    }
+                });
+            }
+        });
+        
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+        
+        // Performance monitoring
+        if (window.performance) {
+            window.addEventListener('load', () => {
+                const perfData = window.performance.timing;
+                const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+                console.log(`Page load time: ${pageLoadTime}ms`);
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'page_load_time', {
+                        value: pageLoadTime,
+                        event_category: 'performance'
+                    });
+                }
+            });
+        }
+        
+        // Store dark mode preference
+        const darkModeToggle = document.querySelector('[data-dark-mode-toggle]');
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', () => {
+                const isDark = document.documentElement.classList.toggle('dark');
+                localStorage.setItem('darkMode', isDark);
+            });
+            
+            // Load preference on page load
+            const savedDarkMode = localStorage.getItem('darkMode');
+            if (savedDarkMode === 'true') {
+                document.documentElement.classList.add('dark');
+            }
+        }
+    </script>
+</body>
+</html>

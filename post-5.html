@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-First Design Guide | Creative Minds Blog</title>
+    <meta name="description" content="Learn mobile-first design principles including touch targets, responsive grids, thumb zones, and performance optimization.">
+    <meta property="og:title" content="Mobile-First Design: A Complete Guide">
+    <meta property="og:image" content="https://yourblog.com/images/mobile-design.jpg">
+    <!-- Include same CSS as post-1.html -->
+</head>
+<body>
+    <!-- Same header -->
+    
+    <main id="main-content">
+        <article class="article-header">
+            <div class="container">
+                <div class="article-meta">
+                    <span>Design</span> • <span>December 5, 2024</span> • <span>8 min read</span>
+                </div>
+                <h1>Mobile-First Design: A Complete Guide</h1>
+                <p class="post-excerpt">Learn how to design beautiful mobile experiences that users love.</p>
+            </div>
+        </article>
+
+        <div class="container">
+            <div class="article-content" data-reveal>
+                <h2>The Importance of Mobile-First</h2>
+                <p>Over 60% of web traffic comes from mobile devices. Designing mobile-first is no longer optional.</p>
+
+                <h2>1. Touch Targets & Thumb Zones</h2>
+                <p>Design for finger navigation:</p>
+                <ul>
+                    <li>Minimum 44x44px touch targets</li>
+                    <li>Place primary actions in thumb zones</li>
+                    <li>Avoid placing critical elements at screen edges</li>
+                </ul>
+
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=400&fit=crop" alt="Mobile app design" loading="lazy">
+
+                <h2>2. Responsive Grid Systems</h2>
+                <p>Use flexible layouts:</p>
+                <pre><code>/* Mobile-first CSS */
+.container {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}</code></pre>
+
+                <h2>3. Performance Optimization</h2>
+                <p>Mobile users expect instant loading:</p>
+                <ul>
+                    <li>Optimize images with WebP</li>
+                    <li>Minimize JavaScript bundles</li>
+                    <li>Use lazy loading</li>
+                </ul>
+
+                <h2>4. Progressive Web Apps (PWAs)</h2>
+                <p>Combine web and native app experiences:</p>
+                <pre><code>// Service Worker registration
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}</code></pre>
+
+                <h2>5. Accessibility on Mobile</h2>
+                <p>Ensure your mobile UI works for everyone:</p>
+                <ul>
+                    <li>High contrast ratios</li>
+                    <li>Screen reader compatibility</li>
+                    <li>Keyboard navigation support</li>
+                </ul>
+
+                <h2>Conclusion</h2>
+                <p>Mobile-first design is about empathy for mobile users. Start small and enhance progressively.</p>
+
+                <div class="tags">
+                    <span class="tag">Mobile Design</span>
+                    <span class="tag">Responsive</span>
+                    <span class="tag">PWA</span>
+                    <span class="tag">UX</span>
+                </div>
+
+                <!-- Same author bio, share buttons, and related posts -->
+            </div>
+        </div>
+    </main>
+
+    <section class="newsletter section-padding" id="newsletter">
+        <!-- Newsletter form -->
+    </section>
+
+    <footer>
+        <!-- Same footer -->
+    </footer>
+</body>
+</html>

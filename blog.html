@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Stories from Kathmandu Valley | The Kathmandu Chronicles</title>
+    <meta name="description" content="Browse 150+ authentic stories from Kathmandu Valley. Heritage, community resilience, urban life, and cultural narratives from Nepal's sacred valley.">
+    <meta name="keywords" content="Kathmandu stories, Nepal culture, Newar heritage, valley communities, Nepali storytelling, Himalayan life">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thekathmanduchronicles.com/blog.html">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Stories from Kathmandu Valley | The Kathmandu Chronicles">
+    <meta property="og:description" content="150+ authentic stories from Nepal's sacred valley.">
+    <meta property="og:url" content="https://thekathmanduchronicles.com/blog.html">
+    <meta property="og:image" content="https://thekathmanduchronicles.com/images/og-stories.jpg">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Kathmandu Valley Stories">
+    
+    <style>
+        /* Import all styles from index.html plus blog-specific */
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+        :root{--primary-color:#e67e22;--secondary-color:#16a085;--accent-color:#f1c40f;--dark-bg:#2c3e50;--light-bg:#ecf0f1;--text-dark:#2c3e50;--text-light:#7f8c8d;--space-xs:0.25rem;--space-sm:0.5rem;--space-md:1rem;--space-lg:1.5rem;--space-xl:2rem;--space-2xl:3rem;--space-3xl:4rem;--font-size-base:clamp(1rem,2vw,1.125rem);--font-size-lg:clamp(1.125rem,2vw,1.25rem);--font-size-xl:clamp(1.25rem,3vw,1.5rem);--font-size-2xl:clamp(1.5rem,4vw,2rem);--font-size-3xl:clamp(2rem,5vw,3rem);--shadow-lg:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -4px rgba(0,0,0,0.1);--transition-base:300ms cubic-bezier(0.4,0,0.2,1);}
+        html{scroll-behavior:smooth;}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:var(--text-dark);background:var(--light-bg);}
+        h1{font-size:var(--font-size-3xl);margin-bottom:var(--space-md);}
+        h2{font-size:var(--font-size-2xl);}
+        p{margin-bottom:var(--space-lg);color:var(--text-light);font-size:var(--font-size-base);}
+        .container{max-width:1200px;margin:0 auto;padding:0 var(--space-lg);}
+        .btn{display:inline-flex;align-items:center;gap:var(--space-sm);padding:var(--space-md) var(--space-xl);border-radius:8px;font-weight:600;cursor:pointer;transition:var(--transition-base);border:none;}
+        .btn--primary{background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);color:var(--white);box-shadow:var(--shadow-lg);}
+        .btn--primary:hover{transform:translateY(-2px) scale(1.02);}
+        .btn--secondary{background:transparent;color:var(--primary-color);border:2px solid var(--primary-color);}
+        .text-gradient{background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+        .section-padding{padding:var(--space-3xl) 0;}
+        .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0;}
+        .skip-link{position:absolute;top:-40px;left:0;background:var(--primary-color);color:var(--white);padding:var(--space-sm) var(--space-md);border-radius:0 0 4px 0;z-index:1000;}
+        .skip-link:focus{top:0;}
+        header{position:fixed;top:0;width:100%;background:rgba(248,250,252,0.95);backdrop-filter:blur(12px);z-index:1000;box-shadow:var(--shadow-lg);}
+        nav{display:flex;justify-content:space-between;align-items:center;padding:var(--space-md) 0;}
+        .logo{font-size:var(--font-size-xl);font-weight:800;background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+        .nav-links{display:flex;gap:var(--space-lg);list-style:none;}
+        .nav-links a[aria-current="page"]{color:var(--primary-color);}
+        .mobile-menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:var(--space-sm);}
+        .breadcrumb{padding:var(--space-md) 0;font-size:var(--font-size-sm);color:var(--text-muted);}
+        .posts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:var(--space-xl);}
+        .post-card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-md);transition:var(--transition-base);display:flex;flex-direction:column;height:100%;}
+        .post-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:var(--shadow-xl);}
+        .post-card.featured{border:2px solid var(--primary-color);}
+        .post-image{height:220px;overflow:hidden;position:relative;}
+        .post-image img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;}
+        .post-card:hover .post-image img{transform:scale(1.08);}
+        .post-content{padding:var(--space-xl);flex-grow:1;display:flex;flex-direction:column;}
+        .post-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-md);font-size:var(--font-size-sm);color:var(--text-muted);}
+        .post-category{background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);color:var(--white);padding:var(--space-xs) var(--space-sm);border-radius:20px;font-weight:700;text-transform:uppercase;font-size:var(--font-size-xs);}
+        .post-title{font-size:var(--font-size-xl);margin-bottom:var(--space-md);color:var(--text-dark);line-height:1.3;}
+        .post-title a{text-decoration:none;color:inherit;}
+        .post-title a:hover{color:var(--primary-color);}
+        .post-excerpt{color:var(--text-light);margin-bottom:var(--space-lg);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;flex-grow:1;}
+        .read-more{display:inline-flex;align-items:center;gap:var(--space-sm);color:var(--primary-color);font-weight:600;text-decoration:none;margin-top:auto;}
+        .read-more:hover{gap:var(--space-md);}
+        .blog-header{background:var(--gradient-light);padding:var(--space-3xl) 0;text-align:center;}
+        .blog-stats{display:flex;justify-content:center;gap:var(--space-xl);margin-top:var(--space-xl);flex-wrap:wrap;}
+        .blog-stat{text-align:center;padding:var(--space-md) var(--space-lg);background:rgba(230,126,34,0.05);border-radius:12px;border:1px solid rgba(230,126,34,0.1);}
+        .blog-stat-number{font-size:var(--font-size-2xl);font-weight:800;background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+        .filter-section{text-align:center;margin-bottom:var(--space-2xl);}
+        .filter-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:var(--space-sm);}
+        .filter-btn{padding:var(--space-sm) var(--space-md);border-radius:20px;border:2px solid rgba(230,126,34,0.1);background:rgba(230,126,34,0.05);color:var(--text-muted);font-weight:600;cursor:pointer;transition:var(--transition-base);}
+        .filter-btn:hover{border-color:var(--primary-color);color:var(--primary-color);}
+        .filter-btn.active{background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);color:var(--white);border-color:var(--primary-color);}
+        .pagination{display:flex;justify-content:center;align-items:center;margin-top:var(--space-3xl);gap:var(--space-lg);}
+        .pagination button{padding:var(--space-sm) var(--space-md);border-radius:8px;border:2px solid rgba(230,126,34,0.1);background:rgba(230,126,34,0.05);color:var(--text-muted);font-weight:600;cursor:pointer;transition:var(--transition-base);}
+        .pagination button:hover:not(:disabled){border-color:var(--primary-color);color:var(--primary-color);}
+        .pagination button:disabled{opacity:0.5;cursor:not-allowed;}
+        .pagination .current{background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);color:var(--white);border-color:var(--primary-color);}
+        footer{background:var(--dark-bg);color:var(--text-dark);padding:var(--space-3xl) 0 var(--space-lg);}
+        .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-2xl);margin-bottom:var(--space-2xl);}
+        @media (max-width:768px){.mobile-menu-toggle{display:block;}.nav-links{position:fixed;top:70px;left:-100%;width:100%;height:calc(100vh - 70px);background:var(--light-bg);flex-direction:column;align-items:center;justify-content:center;gap:var(--space-xl);transition:left var(--transition-base);}.nav-links.active{left:0;}.posts-grid{grid-template-columns:1fr;}}
+        
+        /* Additional Blog-Specific Styles */
+        .region-filter {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-sm);
+            margin: var(--space-xl) 0;
+        }
+        
+        .region-btn {
+            padding: var(--space-md);
+            border-radius: 8px;
+            border: 2px solid var(--glass-border);
+            background: var(--glass-bg);
+            color: var(--text-muted);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-base);
+            text-align: center;
+        }
+        
+        .region-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .region-btn.active {
+            background: var(--gradient-1);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        .story-count {
+            font-size: var(--font-size-sm);
+            opacity: 0.8;
+            display: block;
+            margin-top: var(--space-xs);
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="reading-progress" id="readingProgress"></div>
+    <div class="loading-overlay" id="loadingOverlay"><div class="loader"></div></div>
+    
+    <header id="header">
+        <nav class="container">
+            <div class="logo">The <span class="text-gradient">Kathmandu</span> Chronicles</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" aria-current="page">Stories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <!-- Blog Header -->
+        <section class="blog-header" aria-labelledby="blog-heading">
+            <div class="container container--narrow">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <span>→</span> Stories
+                </div>
+                <h1 id="blog-heading">
+                    Stories from <span class="text-gradient">Kathmandu Valley</span>
+                </h1>
+                <p style="font-size: var(--font-size-lg); color: var(--text-muted);">
+                    150+ authentic stories from across the valley. Updated weekly.
+                </p>
+                
+                <div class="blog-stats" data-reveal>
+                    <div class="blog-stat">
+                        <span class="blog-stat-number">150+</span>
+                        <div>Published Stories</div>
+                    </div>
+                    <div class="blog-stat">
+                        <span class="blog-stat-number">20+</span>
+                        <div>Valley Communities</div>
+                    </div>
+                    <div class="blog-stat">
+                        <span class="blog-stat-number">5K+</span>
+                        <div>Monthly Readers</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Filter Section -->
+        <section class="section-padding--small" aria-labelledby="filter-heading">
+            <div class="container">
+                <h2 id="filter-heading" class="visually-hidden">Filter Stories</h2>
+                <div class="filter-section" data-reveal>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" onclick="filterPosts('all')" aria-pressed="true">
+                            All Stories <span class="story-count">(150)</span>
+                        </button>
+                        <button class="filter-btn" onclick="filterPosts('heritage')" aria-pressed="false">
+                            Heritage <span class="story-count">(45)</span>
+                        </button>
+                        <button class="filter-btn" onclick="filterPosts('community')" aria-pressed="false">
+                            Community <span class="story-count">(38)</span>
+                        </button>
+                        <button class="filter-btn" onclick="filterPosts('urban')" aria-pressed="false">
+                            Urban Life <span class="story-count">(32)</span>
+                        </button>
+                        <button class="filter-btn" onclick="filterPosts('migration')" aria-pressed="false">
+                            Migration <span class="story-count">(25)</span>
+                        </button>
+                    </div>
+                    
+                    <div class="region-filter">
+                        <button class="region-btn active" onclick="filterRegion('all')">
+                            All Valley
+                            <span class="story-count">150 stories</span>
+                        </button>
+                        <button class="region-btn" onclick="filterRegion('kathmandu')">
+                            Kathmandu City
+                            <span class="story-count">42 stories</span>
+                        </button>
+                        <button class="region-btn" onclick="filterRegion('bhaktapur')">
+                            Bhaktapur
+                            <span class="story-count">28 stories</span>
+                        </button>
+                        <button class="region-btn" onclick="filterRegion('patan')">
+                            Patan
+                            <span class="story-count">31 stories</span>
+                        </button>
+                        <button class="region-btn" onclick="filterRegion('mountain')">
+                            Mountain Villages
+                            <span class="story-count">34 stories</span>
+                        </button>
+                        <button class="region-btn" onclick="filterRegion('river')">
+                            River Communities
+                            <span class="story-count">15 stories</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stories Grid -->
+        <section class="section-padding--small" aria-labelledby="stories-heading">
+            <div class="container">
+                <h2 id="stories-heading" class="visually-hidden">Story List</h2>
+                <div class="posts-grid" id="postsContainer">
+                    <!-- All 6 stories from index.html, plus more -->
+                    <article class="post-card featured" data-reveal data-category="heritage" data-region="bhaktapur">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1569163139394-de4798aa4e9a?w=600&h=250&fit=crop" 
+                                 alt="Newar potter in Bhaktapur working on traditional pottery wheel" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="250">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Heritage</span>
+                                <span class="post-date" datetime="2024-12-18">Dec 18, 2024</span>
+                                <span>6 min read</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="post-1.html" aria-describedby="read-more-thimi">
+                                    The Last Potter of Thimi: Keeping Newar Traditions Alive
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                At 68, Prem Bahadur Prajapati is one of the last master potters in Thimi. His hands, coated in red clay for 50 years, shape vessels using techniques unchanged for 12 generations. But his sons have different plans.
+                            </p>
+                            <a href="post-1.html" class="read-more" id="read-more-thimi">
+                                Read Full Story <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="post-card" data-reveal data-category="community" data-region="mountain">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&h=250&fit=crop" 
+                                 alt="Tamang woman in traditional clothing walking through mountain village" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="250">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category" style="background: var(--gradient-2);">Community</span>
+                                <span class="post-date" datetime="2024-12-15">Dec 15, 2024</span>
+                                <span>8 min read</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="post-2.html">
+                                    Rebuilding Dolakha: Women Leading Earthquake Recovery
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                After the 2015 earthquake destroyed their homes, women in Dolakha didn't wait for help. They formed collectives, learned masonry, and rebuilt their village stone by stone. The story of resilience and leadership.
+                            </p>
+                            <a href="post-2.html" class="read-more">
+                                Read Article <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="post-card" data-reveal data-category="urban" data-region="kathmandu">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1575576653408-2e17f05c1026?w=600&h=250&fit=crop" 
+                                 alt="Street food vendor in Kathmandu preparing traditional snacks" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="250">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category" style="background: var(--gradient-3);">Urban Life</span>
+                                <span class="post-date" datetime="2024-12-12">Dec 12, 2024</span>
+                                <span>5 min read</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="post-3.html">
+                                    Kathmandu's Invisible Workforce: Street Vendors' Daily Battle
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                Every morning at 5 AM, 64-year-old Saraswati rises to sell chatamari near Ratna Park. Her story mirrors thousands of informal workers who keep Kathmandu running while fighting for their right to exist.
+                            </p>
+                            <a href="post-3.html" class="read-more">
+                                Read Guide <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="post-card" data-reveal data-category="migration" data-region="kathmandu">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1618835962155-1377b2b3b066?w=600&h=250&fit=crop" 
+                                 alt="Young Nepali woman in traditional dress with modern backpack at bus station" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="250">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Migration</span>
+                                <span class="post-date" datetime="2024-12-10">Dec 10, 2024</span>
+                                <span>7 min read</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="post-4.html">
+                                    Between Two Worlds: The Girl Who Left and Returned
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                    After 10 years working in Dubai, Sunita returned to her village in Kavre with savings and dreams. But home wasn't the same. This is the story of reverse migration and relearning belonging.
+                            </p>
+                            <a href="post-4.html" class="read-more">
+                                Read Story <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="post-card" data-reveal data-category="community" data-region="patan">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=250&fit=crop" 
+                                 alt="Community elders in Patan courtyard discussing local issues" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="250">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category" style="background: var(--gradient-2);">Community</span>
+                                <span class="post-date" datetime="2024-12-08">Dec 8, 2024</span>
+                                <span>6 min read</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="post-5.html">
+                                    Patan's Courtyard Conversations: Where Democracy Lives
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                    In the ancient courtyards of Patan, community members still gather for 'marga' meetings. Here, decisions are made collectively, disputes resolved, and the old ways of governance survive.
+                            </p>
+                            <a href="post-5.html" class="read-more">
+                                Read Article <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                    
+                    <article class="post-card" data-reveal data-category="heritage" data-region="river">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1579606032821-4e6161c81bd3?w=600&h=250&fit=crop" 
+                                 alt="Fishermen on Bagmati River at sunrise with traditional nets" 
+                                 loading="lazy"
+                                 width="600"
+                                 height="250">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category" style="background: var(--gradient-3);">Heritage</span>
+                                <span class="post-date" datetime="2024-12-05">Dec 5, 2024</span>
+                                <span>5 min read</span>
+                            </div>
+                            <h3 class="post-title">
+                                <a href="post-6.html">
+                                    Guardians of Bagmati: The Fishing Families Who Remain
+                                </a>
+                            </h3>
+                            <p class="post-excerpt">
+                                    For 300 years, families along the Bagmati fished these waters. Today, only three families remain. A story of tradition battling pollution and progress.
+                            </p>
+                            <a href="post-6.html" class="read-more">
+                                Read Story <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="pagination" data-reveal>
+                    <button class="btn btn--secondary" disabled aria-label="Previous page">
+                        ← Previous
+                    </button>
+                    <span class="current" aria-current="page">
+                        Page 1 of 25
+                    </span>
+                    <button class="btn btn--secondary" onclick="loadPage(2)" aria-label="Next page">
+                        Next →
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter -->
+        <section class="section-padding" id="newsletter" aria-labelledby="newsletter-heading">
+            <div class="container container--narrow">
+                <div class="newsletter-form" data-reveal>
+                    <h2 id="newsletter-heading">Don't Miss New Stories</h2>
+                    <p style="text-align: center;">
+                        Subscribe for weekly stories from Kathmandu Valley.
+                    </p>
+                    <form id="newsletterForm" novalidate>
+                        <input type="email" 
+                               name="email" 
+                               placeholder="your.email@example.com" 
+                               required 
+                               aria-label="Email for story newsletter">
+                        <button type="submit" class="btn btn--primary btn--full-width">
+                            Subscribe Free
+                        </button>
+                    </form>
+                    <p class="newsletter__error" role="alert"></p>
+                    <p class="newsletter__success" role="status" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Enhanced footer -->
+    </footer>
+    
+    <script>
+        // Enhanced filter functionality
+        function filterPosts(category) {
+            const posts = document.querySelectorAll('.post-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-pressed', 'false');
+            });
+            
+            event.target.classList.add('active');
+            event.target.setAttribute('aria-pressed', 'true');
+            
+            posts.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                const shouldShow = category === 'all' || cardCategory === category;
+                card.style.display = shouldShow ? 'flex' : 'none';
+                
+                if (shouldShow) {
+                    card.setAttribute('data-reveal', 'true');
+                }
+            });
+        }
+        
+        function filterRegion(region) {
+            const posts = document.querySelectorAll('.post-card');
+            const buttons = document.querySelectorAll('.region-btn');
+            
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            event.target.classList.add('active');
+            
+            posts.forEach(card => {
+                const cardRegion = card.getAttribute('data-region');
+                const shouldShow = region === 'all' || cardRegion === region;
+                card.style.display = shouldShow ? 'flex' : 'none';
+            });
+        }
+        
+        function loadPage(page) {
+            // Implementation for pagination
+            console.log(`Loading page: ${page}`);
+        }
+        
+        // Import all other scripts from index.html
+    </script>
+</body>
+</html>
