@@ -63,36 +63,84 @@
         img{max-width:100%;height:auto;display:block;border-radius:12px;}
         .container{max-width:1200px;margin:0 auto;padding:0 var(--space-lg);}
         .container--narrow{max-width:800px;}
-        header{position:fixed;top:0;width:100%;background:rgba(248,250,252,0.95);backdrop-filter:blur(12px);z-index:1000;box-shadow:var(--shadow-lg);}
-        nav{display:flex;justify-content:space-between;align-items:center;padding:var(--space-md) 0;}
-        .logo{font-size:var(--font-size-xl);font-weight:800;background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-        .nav-links{display:flex;gap:var(--space-lg);list-style:none;}
-        .skip-link{position:absolute;top:-40px;left:0;background:var(--primary-color);color:var(--white);padding:var(--space-sm) var(--space-md);border-radius:0 0 4px 0;z-index:1000;}
-        .skip-link:focus{top:0;}
         .article-header{background:var(--gradient-light);padding:var(--space-3xl) 0;text-align:center;}
         .article-meta{display:flex;justify-content:center;gap:var(--space-lg);margin-bottom:var(--space-lg);flex-wrap:wrap;font-size:var(--font-size-sm);color:var(--text-muted);}
         .article-category{background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);color:var(--white);padding:var(--space-xs) var(--space-sm);border-radius:20px;font-weight:700;text-transform:uppercase;font-size:var(--font-size-xs);}
         .article-title{font-size:var(--font-size-3xl);margin-bottom:var(--space-md);line-height:1.2;}
         .article-excerpt{font-size:var(--font-size-lg);color:var(--text-muted);max-width:700px;margin:0 auto var(--space-md);}
-        .breadcrumb{padding:var(--space-md) 0;font-size:var(--font-size-sm);color:var(--text-muted);}
-        .table-of-contents{background:var(--glass-bg);padding:var(--space-xl);border-radius:12px;border:1px solid var(--glass-border);margin:var(--space-2xl) 0;}
         .article-content{max-width:800px;margin:0 auto;font-size:var(--font-size-lg);line-height:1.7;}
-        .article-content h2{margin-top:var(--space-3xl);margin-bottom:var(--space-lg);}
-        .article-content h3{margin-top:var(--space-2xl);margin-bottom:var(--space-md);}
-        .article-content blockquote{background:var(--glass-bg);border-left:4px solid var(--primary-color);padding:var(--space-lg);margin:var(--space-xl) 0;font-style:italic;}
-        .article-content img{margin:var(--space-xl) 0;box-shadow:var(--shadow-lg);}
-        .article-footer{margin-top:var(--space-3xl);padding-top:var(--space-2xl);border-top:2px solid var(--glass-border);}
-        .author-bio{display:flex;gap:var(--space-lg);align-items:center;padding:var(--space-xl);background:var(--glass-bg);border-radius:12px;margin:var(--space-xl) 0;}
-        .author-avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;}
-        .tags{display:flex;flex-wrap:wrap;gap:var(--space-sm);margin:var(--space-xl) 0;}
-        .tag{padding:var(--space-xs) var(--space-sm);background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);color:var(--white);border-radius:20px;font-size:var(--font-size-xs);font-weight:600;}
-        .share-buttons{display:flex;gap:var(--space-md);margin:var(--space-xl) 0;}
-        .share-btn{display:flex;align-items:center;gap:var(--space-sm);padding:var(--space-sm) var(--space-md);background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:8px;cursor:pointer;transition:var(--transition-base);}
-        .share-btn:hover{background:linear-gradient(135deg,#e67e22 0%,#d35400 100%);color:var(--white);transform:translateY(-2px);}
-        .related-posts{margin-top:var(--space-3xl);padding-top:var(--space-2xl);border-top:2px solid var(--glass-border);}
-        .newsletter-form{display:flex;flex-direction:column;gap:var(--space-md);}
-        @media (max-width:768px){.mobile-menu-toggle{display:block;}.nav-links{position:fixed;top:70px;left:-100%;width:100%;height:calc(100vh - 70px);background:var(--light-bg);flex-direction:column;align-items:center;justify-content:center;gap:var(--space-xl);transition:left var(--transition-base);}.nav-links.active{left:0;}.article-title{font-size:var(--font-size-2xl);}.author-bio{flex-direction:column;text-align:center;}.share-buttons{flex-wrap:wrap;}}
-        
-        /* Additional Article Styles */
+    </style>
 
-        .reading-time{display:inline-flex;align-items:center;gap:var(--space-xs);background:rgba(230,126,34,0.1);padding:var(--space-xs) var(--space-sm);border-radius:20px;font-size:
+</head>
+<body>
+
+    <main id="main-content">
+        
+        <section class="article-header">
+            <div class="container container--narrow">
+                <div class="article-meta">
+                    <span class="article-category">Migration</span>
+                    <span class="reading-time">7 min read</span>
+                    <span class="article-date">December 10, 2024</span>
+                </div>
+
+                <h1 class="article-title">Between Two Worlds: The Girl Who Left and Returned</h1>
+
+                <p class="article-excerpt">
+                    After 10 years of working abroad, Sunita returned home with savings and hope. But the village she left was no longer the same.
+                </p>
+            </div>
+        </section>
+
+        <section class="article-content container container--narrow">
+
+            <p>
+                Sunita left home with a small suitcase and a simple plan. Work for a few years, save enough money, and return to build a better life. At twenty, staying behind felt like falling behind. The village was familiar, predictable, and limiting. Leaving felt necessary.
+            </p>
+
+            <p>
+                Dubai was overwhelming from the beginning. The heat, the pace, the long workdays that blurred into one another. Life became a routine of shifts, shared rooms, and quiet endurance. There was little time to think, and even less space to rest. Every month, she sent money home before spending anything on herself.
+            </p>
+
+            <p>
+                Back home, the changes were visible. Roofs were repaired. Debts were paid. Needs were met. From a distance, Sunita became a success story. Someone who made the sacrifice worth it. Someone others quietly admired.
+            </p>
+
+            <p>
+                Years passed without ceremony. Festivals arrived through phone screens. Birthdays were marked by brief calls between work hours. Losses were mourned late, alone, often in silence. She kept telling herself it was temporary. Just a little longer.
+            </p>
+
+            <p>
+                When she finally returned after ten years, she expected comfort. Relief. Familiarity. Instead, she felt disoriented. The village looked smaller. Many houses were locked, their owners scattered across cities and countries. Fields were partially cultivated or left empty. Faces she remembered had aged, carrying a different kind of tiredness.
+            </p>
+
+            <p>
+                The welcome was warm, but brief. Conversations quickly turned practical. What will you do now? How much did you save? When will you settle? Few people asked how she felt. She smiled, answered politely, and avoided the truth. That she did not know.
+            </p>
+
+            <p>
+                Home felt unfamiliar in subtle ways. The pace of life was slower, yet heavier. Silence pressed in at night. Her body still expected alarms, schedules, instructions. She missed the structure of her working life even as she resented the years it took from her.
+            </p>
+
+            <p>
+                Sunita tried to rebuild routines. Helping her parents. Walking the paths she once knew without thinking. Some days felt hopeful. Others felt empty. She had returned with savings, but not with certainty. Migration had reshaped her habits, her patience, and her sense of belonging.
+            </p>
+
+            <p>
+                Leaving had changed her. Staying had changed everyone else.
+            </p>
+
+            <p>
+                Her story reflects a larger reality. Migration promises opportunity, but it also creates distance that money cannot always close. Returning is not a clean ending. It is another beginning, often more complicated than leaving.
+            </p>
+
+            <p>
+                Sunita now lives between two worlds. One taught her discipline and survival. The other holds her memories and roots. Neither feels complete on its own. For now, she continues forward, learning again what home means, and accepting that some journeys do not end where they began.
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
